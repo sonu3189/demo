@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+
+body
+{
+     background:red;
+     display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+#box
+{
+
+	width: 800px;
+	height: 400px;
+	background:black;
+}
+#cr1
+{
+	  display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 150px;
+    font-size: 100px;
+	color: white;
+}
+.ulines
+{
+	width: 51%;
+	height:0%;
+	position: absolute;
+	top: 150px;
+	border: 5px dashed #00FF00;
+	
+
+}
+.blines
+{
+	width: 51%;
+	height:0%;
+	position: absolute;
+	top: 400px;
+	border: 5px dashed #00FF00;
+	
+
+}
+.wcsa
+{
+	color: #00BFFF;
+	position: relative;
+	animation-name: csa;
+	animation-duration: 5s;
+	animation-iteration-count: 4;
+
+}
+@keyframes csa
+{
+from{transform: translate(-800px)}
+to{transform: translate(800px)}
+}
+.block
+{
+	width: 50px;
+	height: 50px;
+	margin-left: 250px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes example 
+{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:250px; top:0px;}
+    50%  {background-color:blue; left:250px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+#btn
+{
+	background-color: yellow;
+	color: white;
+	margin-top: 100px;
+	font-size: 30px;
+
+}
+</style>
+</head>
+<body>
+
+<div class="csa">
+	<center><h1 class="wcsa">WELCOME TO CREATIVE SCIENCE ACADEMY</h1></center>
+</div>
+<div id="box">
+	<div class="cr"><h1 id="cr1">CSA</h1></div>
+	<div class="ulines">
+		<div class="block"></div>
+	</div>
+	
+	<div class="blines"></div>
+	</div>
+<div id="btn">
+<a href="home.html"> click go to website</a>
+</div>
+</body>
+</html>
